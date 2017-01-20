@@ -17,7 +17,7 @@ RUN tar -xvjpf  phantomjs-1.9.8-linux-x86_64.tar.bz2
 RUN cp -Rfa phantomjs-1.9.8-linux-x86_64/* /opt/phantomjs/
 RUN ln -s /opt/phantomjs/bin/phantomjs /usr/bin/phantomjs
 
-RUN npm install bower
+RUN npm install -g bower
 RUN curl -sS https://getcomposer.org/installer | php  -- --install-dir=/bin
 RUN cp /bin/composer.phar /bin/composer
 
